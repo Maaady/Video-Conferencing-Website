@@ -53,7 +53,6 @@ function displayImg(file) {
         ctx.fillText("Emergency Location", 0, 0);
         ctx.restore();
 
-        // https://davidshimjs.github.io/qrcodejs/
         var qrcontent = document.getElementById("qrcontent").value;
         console.log(qrcontent);
         //clear qrcode
@@ -80,7 +79,7 @@ function displayImg(file) {
 }
 function download() {
     var link = document.createElement('a');
-    link.download = "vikoqr-"+filename;
+    link.download = "Maaady-"+filename;
     link.href = document.getElementById('canvas').toDataURL()
     link.click();
 }
